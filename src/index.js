@@ -1,5 +1,5 @@
 import Core from "sap/ui/core/Core";
-import EChartsControl from "./controls/EChartsControl";
+import ECharts from "./controls/ECharts";
 import Page from "sap/m/Page";
 import SplitApp from "sap/m/SplitApp";
 import Input from "sap/m/Input";
@@ -29,7 +29,7 @@ const app = <SplitApp
   }
   detailPages={
     <Page title="ECharts" backgroundDesign={BackgroundDesign.Transparent} >
-      <EChartsControl option="{/EChartsOption}" />
+      <ECharts option="{/EChartsOption}" />
     </Page>
   }
 />;

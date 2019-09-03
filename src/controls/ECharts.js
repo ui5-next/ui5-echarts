@@ -2,9 +2,7 @@ import Control from "sap/ui/core/Control";
 import echarts from "echarts";
 import RenderManager from "sap/ui/core/RenderManager";
 
-const E_CHARTS = "e_chart";
-
-export default class EChartsControl extends Control {
+export default class ECharts extends Control {
 
   metadata = {
     properties: {
@@ -26,14 +24,12 @@ export default class EChartsControl extends Control {
 
     super.init();
 
-    this._chartContainerId = this.getIdForLabel(E_CHARTS);
-
   }
 
   onAfterRendering() {
 
     // after render, dom existed
-    this._chartRef = echarts.init(document.getElementById(this._chartContainerId));
+    this._chartRef = echarts.init(document.getElementById(this.getId()));
 
     // resize chart when the browser size changed
     window.onresize = () => {
@@ -65,11 +61,11 @@ export default class EChartsControl extends Control {
 
   }
 
-  renderer(oRM: RenderManager, oControl: EChartsControl) {
+  renderer(oRM: RenderManager, oControl: ECharts) {
 
     oRM.openStart("div");
 
-    oRM.attr("id", oControl._chartContainerId);
+    oRM.attr("id", oControl.getId());
     oRM.style("width", oControl.getWidth());
     oRM.style("height", oControl.getHeight());
     oRM.writeControlData(oControl);
