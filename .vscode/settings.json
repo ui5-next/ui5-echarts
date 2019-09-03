@@ -1,0 +1,22 @@
+{
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "files.eol": "\n",
+    "javascript.validate.enable": false,
+    "cSpell.words": [
+        "Netlify",
+        "devtools",
+        "echarts",
+        "fiori",
+        "middlewares",
+        "northwind",
+        "openui",
+        "preload",
+        "sourcemap",
+        "thirdparty",
+        "unfavorite"
+    ]
+}
