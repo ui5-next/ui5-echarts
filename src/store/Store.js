@@ -1,9 +1,15 @@
 import ReduxModel from "./redux/ReduxModel";
+import { EChartOption } from "echarts";
+
+// with type
+interface AppStateType {
+  EChartsOption: EChartOption
+}
 
 /**
  * Application initialize state
  */
-const AppInitState = {
+const AppInitState: AppStateType = {
   EChartsOption: {
     tooltip: {
       trigger: "item",
@@ -23,7 +29,6 @@ const AppInitState = {
           { value: 400, name: "搜索引擎" }
         ],
         roseType: "radius"
-
       }
     ]
 

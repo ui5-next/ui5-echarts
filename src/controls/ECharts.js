@@ -44,7 +44,8 @@ export default class ECharts extends Control {
       // with data binding
       // change on dynamic
       // generally, control use getter/setter to update dom
-      // but for this control. we use a directly way
+      // but for this control. we use a workaround way
+      // to make binding also works after model changed
 
       oBinding.attachEvent("change", (e) => {
         this._chartRef.setOption(e.getSource().getValue());

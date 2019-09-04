@@ -4,6 +4,8 @@
 
 The ECharts UI Binding for UI5, you can review this repo and create your binding.
 
-## Demo
+## Deployed Demo
 
 [![](https://res.cloudinary.com/digf90pwi/image/upload/v1567494475/2019-09-03_15-01-55_nfogbm.png)](https://vigilant-franklin-611b28.netlify.com)
+
+## [Offcial Reference Demo](https://www.echartsjs.com/gallery/editor.html?c=pie-custom)

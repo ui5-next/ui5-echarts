@@ -10,17 +10,22 @@ import List from "sap/m/List";
 import CustomListItem from "sap/m/CustomListItem";
 import BackgroundDesign from "sap/m/BackgroundDesign";
 
-const app = <SplitApp
+const app: SplitApp = <SplitApp
   masterPages={
     <Page title="Data" backgroundDesign={BackgroundDesign.Transparent} >
       <SimpleForm>
         <List
           items={{
             path: "/EChartsOption/series/0/data",
-            template: <CustomListItem content={[
-              <Label text="{name}" />,
-              <Input value="{value}" valueLiveUpdate={true} />
-            ]} />
+            template: <CustomListItem
+              content={[
+                <Label text="{name}" />,
+                <Input
+                  value="{value}"
+                  valueLiveUpdate={true}
+                />
+              ]}
+            />
 
           }}
         />
